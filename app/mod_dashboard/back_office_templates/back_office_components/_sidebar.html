@@ -1,0 +1,120 @@
+<li id="list-dashboard">
+  
+  <a href="{{ url_for('mod_dashboard.index') }}"><i class="fa fa-fw fa-dashboard"></i> {{ _('Dashboard') }}</a>
+</li>
+{% if current_user.roles == ['Developer'] %}
+<li class="sb-sidenav-menu-heading">Developer</li>
+<li id="list-settings">
+  <a href="javascript:;" data-toggle="collapse" data-target="#setting-data-dev"><i class="fa fa-fw fa-arrows-v"></i>
+    {{ _('App Settings') }}
+    <i class="fa fa-fw fa-caret-down"></i></a>
+  <ul id="setting-data-dev" class="collapse">
+    <li>
+      <a href="{{ url_for('mod_app_profile.application_profile') }}">{{ _('Application Profile') }}</a>
+    </li>
+  </ul>
+</li>
+<li id="list-master">
+  <a href="javascript:;" data-toggle="collapse" data-target="#master-data-dev"><i class="fa fa-fw fa-arrows-v"></i>
+    {{ _('Master App Data') }}
+    <i class="fa fa-fw fa-caret-down"></i></a>
+  <ul id="master-data-dev" class="collapse">
+    <li>
+      <a href="{{ url_for('mod_bussines_profile.create_business_profile') }}">{{ _('Business Profile') }}</a>
+    </li>
+    <li>
+      <a href="{{ url_for('mod_role.roles') }}">{{ _('Roles') }}</a>
+    </li>
+    <li>
+      <a href="{{ url_for('mod_user.users') }}">{{ _('Users') }}</a>
+    </li>
+    <li>
+      <a href="{{ url_for('mod_category.categories') }}">{{ _('Category') }}</a>
+    </li>
+     <li>
+      <a href="{{ url_for('mod_product.products') }}">{{ _('Product') }}</a>
+    </li>
+  </ul>
+</li>
+<li id="list-transaction">
+  <a href="javascript:;" data-toggle="collapse" data-target="#transaction-dev"><i class="fa fa-fw fa-arrows-v"></i>
+    {{ _('Transaction Data') }}
+    <i class="fa fa-fw fa-caret-down"></i>
+  </a>
+  <ul id="transaction-dev" class="collapse">
+    <li>
+      <a href="{{ url_for('mod_pos.transaction') }}">{{ _('Transaction') }}</a>
+    </li>
+  </ul>
+</li>
+{% if config['ENV'] == 'development' %}
+<li id="list-docs">
+  <a href="javascript:;" data-toggle="collapse" data-target="#documentation"><i class="fa fa-fw fa-file-code-o"></i>
+    {{ _('Theme Documentation') }}
+    <i class="fa fa-fw fa-caret-down"></i></a>
+  <ul id="documentation" class="collapse">
+    <li>
+      <a href="{{ url_for('mod_dashboard.docs_dashboard') }}"><i class="fa fa-fw fa-dashboard"></i>
+        {{ _('Dashboard') }}</a>
+    </li>
+    <li>
+      <a href="{{ url_for('mod_dashboard.docs_charts') }}"><i class="fa fa-fw fa-bar-chart-o"></i>
+        {{ _('Charts') }}</a>
+    </li>
+    <li>
+      <a href="{{ url_for('mod_dashboard.docs_tables') }}"><i class="fa fa-fw fa-table"></i> {{ _('Tables') }}</a>
+    </li>
+    <li>
+      <a href="{{ url_for('mod_dashboard.docs_forms') }}"><i class="fa fa-fw fa-edit"></i> {{ _('Forms') }}</a>
+    </li>
+    <li>
+      <a href="{{ url_for('mod_dashboard.docs_bs_element') }}"><i class="fa fa-fw fa-desktop"></i>
+        {{ _('Bootstrap Elements' ) }}</a>
+    </li>
+    <li>
+      <a href="{{ url_for('mod_dashboard.docs_bs_grid') }}"><i class="fa fa-fw fa-wrench"></i>
+        {{ _('Bootstrap Grid') }}</a>
+    </li>
+    <li class="active">
+      <a href="{{ url_for('mod_dashboard.blank') }}"><i class="fa fa-fw fa-file"></i> {{ _('Blank Page') }}</a>
+    </li>
+    <li>
+      <a href="https://fontawesome.com/v4.7.0/cheatsheet/" target="_blank"><i class="fa fa-fw fa-font"></i>
+        {{ _('Font Awesome') }}</a>
+    </li>
+  </ul>
+</li>
+{% endif %} {% endif %} {% if current_user.roles == ['Admin'] %}
+
+<li class="sb-sidenav-menu-heading">Administrator</li>
+<li id="list-master">
+  <a href="javascript:;" data-toggle="collapse" data-target="#master-data-admin"><i class="fa fa-fw fa-arrows-v"></i>
+    {{ _('Master App Data') }}
+    <i class="fa fa-fw fa-caret-down"></i></a>
+  <ul id="master-data-admin" class="collapse">
+    <li>
+      <a href="{{ url_for('mod_bussines_profile.create_business_profile') }}">{{ _('Business Profile') }}</a>
+    </li>
+    <li>
+      <a href="{{ url_for('mod_user.users') }}">{{ _('Users') }}</a>
+    </li>
+    <li>
+      <a href="{{ url_for('mod_category.categories') }}">{{ _('Category') }}</a>
+    </li>
+    <li>
+      <a href="{{ url_for('mod_product.products') }}">{{ _('Product') }}</a>
+    </li>
+  </ul>
+</li>
+<li id="list-transaction">
+  <a href="javascript:;" data-toggle="collapse" data-target="#transaction-dev"><i class="fa fa-fw fa-arrows-v"></i>
+    {{ _('Transaction Data') }}
+    <i class="fa fa-fw fa-caret-down"></i>
+  </a>
+  <ul id="transaction-dev" class="collapse">
+    <li>
+      <a href="{{ url_for('mod_pos.transaction') }}">{{ _('Transaction') }}</a>
+    </li>
+  </ul>
+</li>
+{% endif %}
