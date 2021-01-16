@@ -1,0 +1,45 @@
+version: '3.8'
+services:
+    flask-boilerplate:
+        build: .
+        image: flask-boilerplate:v1.0.0-dev
+        ports:
+            - "8000:5000"
+        volumes:
+            - .:/home/boilerplate-flask
+        environment:
+            - FLASK_APP=setup.py
+            - FLASK_ENV=production
+            - SECRET_KEY=thisisverysecret
+            - MAIL_SERVER=localhost
+            - MAIL_PORT=8025
+            - MAIL_USE_TLS=True
+            - MAIL_USE_SSL=False
+            - MAIL_USERNAME=
+            - MAIL_PASSWORD=
+            - MAIL_ADMIN=dev@dib.sh
+            - MAIL_DEVELOPER=developer@dib.biz.id
+            - APP_NAME=myapp
+            - LOG_STD_OUT=False
+            - UPLOAD_FOLDER=static/uploads
+            - DATABASE_URL=mysql+pymysql://example:password@mysql-server:3306/boilerplate_flask_pos
+        restart: always
+        depends_on:
+            - mysql-server
+        links:
+            - mysql-server
+    mysql-server:
+        container_name: mysql-server
+        build:
+            context: ./db
+            dockerfile: Dockerfile
+        command: --default-authentication-plugin=mysql_native_password
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_DATABASE=boilerplate_flask_pos
+            - MYSQL_USER=example
+            - MYSQL_PASSWORD=password
+            - MYSQL_ROOT_PASSWORD=example
+        restart: always
+
