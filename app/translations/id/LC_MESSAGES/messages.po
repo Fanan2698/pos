@@ -1,0 +1,968 @@
+# Indonesian translations for .
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the  project.
+# genpati <developer@dib.sh>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  v0.1.0\n"
+"Report-Msgid-Bugs-To: developer@dib.sh\n"
+"POT-Creation-Date: 2020-10-29 17:14+0700\n"
+"PO-Revision-Date: 2020-08-07 02:04+0700\n"
+"Last-Translator: developer <developer@dib.sh>\n"
+"Language: id\n"
+"Language-Team: id <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: app/__init__.py:25
+msgid "Please log in to access this page."
+msgstr "Mohon login terlebih dahulu sebelum mengakses halaman ini."
+
+#: app/mod_app_profile/forms.py:8
+msgid "Application Logo"
+msgstr "Logo Aplikasi"
+
+#: app/mod_app_profile/forms.py:8 app/mod_bussines_profile/forms.py:14
+#: app/mod_product/forms.py:17
+msgid "Images Only"
+msgstr "Hanya gambar"
+
+#: app/mod_app_profile/forms.py:9
+msgid "Application Name *"
+msgstr "Nama Aplikasi *"
+
+#: app/mod_app_profile/forms.py:10
+msgid "Meta Title"
+msgstr "Meta Judul"
+
+#: app/mod_app_profile/forms.py:11
+msgid "Meta Description"
+msgstr "Meta Deksripsi"
+
+#: app/mod_app_profile/forms.py:12
+msgid "Meta Keyword"
+msgstr "Meta Kata Kunci"
+
+#: app/mod_app_profile/forms.py:13 app/mod_bussines_profile/forms.py:39
+#: app/mod_category/forms.py:11 app/mod_product/forms.py:32
+#: app/mod_user/forms.py:61 app/mod_user/forms.py:102 app/mod_user/forms.py:143
+#: app/mod_user/forms.py:191 app/mod_user/forms.py:228
+#: app/mod_user/forms.py:268
+msgid "Save"
+msgstr "Simpan"
+
+#: app/mod_app_profile/routes.py:40 app/mod_bussines_profile/routes.py:62
+#: app/mod_product/routes.py:51
+msgid "Data {} successfully created"
+msgstr "Data {} berhasil di buat"
+
+#: app/mod_app_profile/routes.py:51 app/mod_bussines_profile/routes.py:96
+msgid "Data {} successfully updated"
+msgstr "Data {} berhasil di perbaharui"
+
+#: app/mod_app_profile/routes.py:58
+msgid "Application Profile"
+msgstr "Profil aplikasi"
+
+#: app/mod_auth/email.py:25
+msgid "Reset Your Password"
+msgstr "Reset Kata Sandi"
+
+#: app/mod_auth/email.py:40
+msgid "Confirm Your Email"
+msgstr "Konfirmasi Email Anda"
+
+#: app/mod_auth/forms.py:9
+#: app/mod_user/admin_templates/main/users/users.html:18
+msgid "Username"
+msgstr "Username"
+
+#: app/mod_auth/forms.py:10 app/mod_user/routes.py:311
+msgid "Password"
+msgstr "Kata Sandi"
+
+#: app/mod_auth/forms.py:11
+msgid "Remember Me"
+msgstr "Ingat Saya"
+
+#: app/mod_auth/forms.py:12 app/mod_auth/routes.py:46
+msgid "Sign In"
+msgstr "Masuk"
+
+#: app/mod_auth/forms.py:17
+msgid "First Name *"
+msgstr "Nama Depan *"
+
+#: app/mod_auth/forms.py:19
+msgid "Last Name *"
+msgstr "Nama Belakang *"
+
+#: app/mod_auth/forms.py:20 app/mod_user/forms.py:40
+msgid "Username *"
+msgstr "Username *"
+
+#: app/mod_auth/forms.py:21 app/mod_bussines_profile/forms.py:33
+#: app/mod_user/forms.py:42
+msgid "Email *"
+msgstr "Email *"
+
+#: app/mod_auth/forms.py:22 app/mod_user/forms.py:185 app/mod_user/forms.py:226
+msgid "Password *"
+msgstr "Kata sandi *"
+
+#: app/mod_auth/forms.py:24 app/mod_user/forms.py:188
+msgid "Verify Password *"
+msgstr "Verifikasi Kata Sandi *"
+
+#: app/mod_auth/forms.py:27
+msgid "Register"
+msgstr "Daftar"
+
+#: app/mod_auth/forms.py:32
+msgid "Please use a different username."
+msgstr "Gunakan username lain"
+
+#: app/mod_auth/forms.py:37
+msgid "Please use a different email."
+msgstr "Gunakan email lain"
+
+#: app/mod_auth/forms.py:41
+msgid "Email"
+msgstr "Email"
+
+#: app/mod_auth/forms.py:42
+msgid "Request Password Reset"
+msgstr "Pemintaan atur ulang kata sandi"
+
+#: app/mod_auth/forms.py:46
+msgid "New Password"
+msgstr "Kata Sandi Baru"
+
+#: app/mod_auth/forms.py:48
+msgid "Confirm Password"
+msgstr "Ulangi Kata Sandi"
+
+#: app/mod_auth/forms.py:50 app/mod_auth/routes.py:112
+msgid "Change Password"
+msgstr "Ubah Kata Sandi"
+
+#: app/mod_auth/routes.py:29
+msgid "Your account is not active. Contact your administrator for help."
+msgstr "Akun kamu belum aktif. Hubungi administrator untuk bantuan."
+
+#: app/mod_auth/routes.py:34
+msgid "Invalid username or password"
+msgstr "Username atau kata sandi salah"
+
+#: app/mod_auth/routes.py:41
+msgid "Email address has not been confirmed"
+msgstr "Alamat email belum terkonfirmasi"
+
+#: app/mod_auth/routes.py:44
+msgid "Login Successfuly!"
+msgstr "Berhasil Login!"
+
+#: app/mod_auth/routes.py:52
+msgid "Logout Successfuly!"
+msgstr "Berhasil Logout!"
+
+#: app/mod_auth/routes.py:74
+msgid "Confirmation email has been sent to you."
+msgstr "Email konfirmasi telah dikirim ke email anda"
+
+#: app/mod_auth/routes.py:77
+msgid "Register New User"
+msgstr "Pendaftaran pengguna baru"
+
+#: app/mod_auth/routes.py:90
+msgid "Check your email for the instruction to reset your password"
+msgstr "Cek email anda & ikuti intruksinya untuk mengatur ulang kata sandi"
+
+#: app/mod_auth/routes.py:93
+msgid "Reset Password"
+msgstr "Reset Kata Sandi"
+
+#: app/mod_auth/routes.py:103
+msgid "Invalid or expired link"
+msgstr "Tidak sesuai atau tautan kadaluarsa"
+
+#: app/mod_auth/routes.py:109
+msgid "Your password has been change"
+msgstr "Kata sandi terlah diubah"
+
+#: app/mod_auth/routes.py:123
+msgid "You have confirmed your account."
+msgstr "Akun telah dikonfirmasi"
+
+#: app/mod_auth/routes.py:125
+msgid "The confirmation link is invalid or has expired."
+msgstr "Tautan konfirmasi tidak sesuai atau sudah kadaluarsa"
+
+#: app/mod_auth/routes.py:140
+msgid "A new confirmation email has been sent to you."
+msgstr "Tautan konfirmasi email telah dikirim"
+
+#: app/mod_auth/auth_templates/auth/login.html:9
+msgid "New User?"
+msgstr "Pengguna baru?"
+
+#: app/mod_auth/auth_templates/auth/login.html:9
+msgid "Click to Register!"
+msgstr "Klik untuk mendaftar!"
+
+#: app/mod_auth/auth_templates/auth/login.html:11
+msgid "Forgot Your Password?"
+msgstr "Lupa kata sandi?"
+
+#: app/mod_auth/auth_templates/auth/login.html:12
+msgid "Click to Reset It"
+msgstr "Klik untuk mengatur ulang"
+
+#: app/mod_auth/auth_templates/auth/register.html:9
+msgid "Have Account?"
+msgstr "Sudah mempunyai akun?"
+
+#: app/mod_auth/auth_templates/auth/register.html:9
+#: app/mod_auth/auth_templates/auth/reset_password_request.html:9
+msgid "Click Here!"
+msgstr "Klik disini!"
+
+#: app/mod_auth/auth_templates/auth/reset_password_request.html:9
+msgid "Login ?"
+msgstr "Masuk ke sistem?"
+
+#: app/mod_auth/auth_templates/auth/unconfirmed.html:5
+msgid "Hello,"
+msgstr "Halo,"
+
+#: app/mod_auth/auth_templates/auth/unconfirmed.html:6
+msgid ""
+"Please confirm your account by clicking link has been sent to you by "
+"email."
+msgstr ""
+"Konfirmasi akunmu dengan meng klik tautan yang kami kirimkan melalui "
+"email."
+
+#: app/mod_auth/auth_templates/auth/unconfirmed.html:7
+msgid "Send another confirmation account?"
+msgstr "Kirim lagi tautan konfirmasi?"
+
+#: app/mod_auth/auth_templates/auth/unconfirmed.html:7
+msgid "Click Here"
+msgstr "Klik disini"
+
+#: app/mod_auth/auth_templates/auth_components/base.html:7
+msgid "Welcome to"
+msgstr "Selamat datang"
+
+#: app/mod_auth/auth_templates/auth_email/confirmation.html:1
+msgid "Dear"
+msgstr "Yang Terhormat"
+
+#: app/mod_auth/auth_templates/auth_email/confirmation.html:3
+msgid "To confirm your account click link below"
+msgstr "Untuk melakukan konfirmasi akun anda klik link dibawah ini"
+
+#: app/mod_auth/auth_templates/auth_email/confirmation.html:8
+msgid ""
+"Alternatively, you can paste the following link in your browser address "
+"bar:"
+msgstr "Cara lain dengan tempel link berikut ini pada bilah alamat web bowser anda"
+
+#: app/mod_auth/auth_templates/auth_email/confirmation.html:10
+msgid "Sincerely,"
+msgstr "Salam hormat"
+
+#: app/mod_auth/auth_templates/auth_email/confirmation.html:12
+msgid "Application Team"
+msgstr "Tim Pengembang"
+
+#: app/mod_bussines_profile/forms.py:10
+msgid "Company name *"
+msgstr "Nama perusahaan *"
+
+#: app/mod_bussines_profile/forms.py:13
+msgid "Company logo"
+msgstr "Logo perusahaan"
+
+#: app/mod_bussines_profile/forms.py:16 app/mod_user/forms.py:51
+msgid "Address"
+msgstr "Alamat"
+
+#: app/mod_bussines_profile/forms.py:18
+msgid "Sub-district *"
+msgstr "Kecamatan *"
+
+#: app/mod_bussines_profile/forms.py:21
+msgid "District *"
+msgstr "Kabupaten *"
+
+#: app/mod_bussines_profile/forms.py:23
+msgid "Province *"
+msgstr "Provinsi *"
+
+#: app/mod_bussines_profile/forms.py:25
+msgid "State *"
+msgstr "Negara *"
+
+#: app/mod_bussines_profile/forms.py:29
+msgid "Postal code *"
+msgstr "Kode pos *"
+
+#: app/mod_bussines_profile/forms.py:31 app/mod_user/forms.py:49
+msgid "Phone number"
+msgstr "Nomor telepon"
+
+#: app/mod_bussines_profile/forms.py:34
+msgid "Website *"
+msgstr "Website *"
+
+#: app/mod_bussines_profile/forms.py:35
+msgid "Instagram *"
+msgstr ""
+
+#: app/mod_bussines_profile/forms.py:36
+msgid "Youtube *"
+msgstr ""
+
+#: app/mod_bussines_profile/forms.py:37
+msgid "Twitter *"
+msgstr ""
+
+#: app/mod_bussines_profile/forms.py:38
+msgid "Facebook *"
+msgstr ""
+
+#: app/mod_bussines_profile/routes.py:118
+msgid "Business Profile"
+msgstr "Profil bisnis"
+
+#: app/mod_category/forms.py:8
+msgid "Name *"
+msgstr ""
+
+#: app/mod_category/forms.py:16 app/mod_category/forms.py:29
+msgid "Category {} already available. Please use another name"
+msgstr ""
+
+#: app/mod_category/forms.py:19 app/mod_product/forms.py:40
+msgid "Update"
+msgstr ""
+
+#: app/mod_category/routes.py:20
+msgid "Categories"
+msgstr ""
+
+#: app/mod_category/routes.py:34
+msgid "Category with name {} successfully created"
+msgstr ""
+
+#: app/mod_category/routes.py:38
+msgid "Create Category"
+msgstr ""
+
+#: app/mod_category/routes.py:52
+msgid "Category with name {} successfully updated"
+msgstr ""
+
+#: app/mod_category/routes.py:57
+msgid "Edit Category"
+msgstr ""
+
+#: app/mod_category/routes.py:66
+msgid "Category successfully deleted"
+msgstr ""
+
+#: app/mod_dashboard/routes.py:13
+msgid "Dashboard"
+msgstr "Dasbor"
+
+#: app/mod_dashboard/routes.py:20
+msgid "Blank Template"
+msgstr "Template kosong"
+
+#: app/mod_dashboard/routes.py:27
+msgid "Dashboard Docs"
+msgstr "Dokumentasi dasbor"
+
+#: app/mod_dashboard/routes.py:34
+msgid "Charts Docs"
+msgstr "Dokumentasi bagan grafik"
+
+#: app/mod_dashboard/routes.py:41
+msgid "Tables Docs"
+msgstr "Dokumentasi tabel"
+
+#: app/mod_dashboard/routes.py:48
+msgid "Forms Docs"
+msgstr "Dokumentasi form"
+
+#: app/mod_dashboard/routes.py:56
+msgid "Bootstrap Element Docs"
+msgstr "Dokumentasi Elemen Bootstrap"
+
+#: app/mod_dashboard/routes.py:65
+msgid "Bootstrap Grid Docs"
+msgstr "Dokumentasi Grid Boostrap"
+
+#: app/mod_product/forms.py:17
+msgid "Photo Product"
+msgstr ""
+
+#: app/mod_product/forms.py:18
+msgid "Product Name *"
+msgstr ""
+
+#: app/mod_product/forms.py:20
+msgid "Category *"
+msgstr ""
+
+#: app/mod_product/forms.py:25
+msgid "Select Category"
+msgstr ""
+
+#: app/mod_product/forms.py:28
+msgid "Price *"
+msgstr ""
+
+#: app/mod_product/forms.py:28 app/mod_product/forms.py:29
+msgid "Must Using Number"
+msgstr ""
+
+#: app/mod_product/forms.py:29
+msgid "Stock *"
+msgstr ""
+
+#: app/mod_product/forms.py:37 app/mod_product/forms.py:50
+msgid "Product {} already available. Please use another name"
+msgstr ""
+
+#: app/mod_product/routes.py:27
+msgid "Products"
+msgstr ""
+
+#: app/mod_product/routes.py:53
+msgid "Create Data Products"
+msgstr ""
+
+#: app/mod_product/routes.py:85
+msgid "Data {} sucessfully updated"
+msgstr ""
+
+#: app/mod_product/routes.py:91
+msgid "Update Data Products"
+msgstr ""
+
+#: app/mod_product/routes.py:104
+msgid "Data successfully delete"
+msgstr ""
+
+#: app/mod_product/routes.py:116
+msgid "Data {} sucessfully update"
+msgstr ""
+
+#: app/mod_role/routes.py:16
+#: app/mod_user/admin_templates/main/users/users.html:19
+msgid "Role"
+msgstr "Hak Akses"
+
+#: app/mod_role/role_templates/roles/roles.html:16
+msgid "Nama"
+msgstr "Nama"
+
+#: app/mod_user/forms.py:32
+msgid "Title"
+msgstr "Judul"
+
+#: app/mod_user/forms.py:35
+msgid "First name *"
+msgstr "Nama depan *"
+
+#: app/mod_user/forms.py:38
+msgid "Last name *"
+msgstr "Nama belakang *"
+
+#: app/mod_user/forms.py:45
+msgid "Gender"
+msgstr "Jenis kelamin"
+
+#: app/mod_user/forms.py:48
+msgid "Day of birth"
+msgstr "Tanggal Lahir"
+
+#: app/mod_user/forms.py:50
+msgid "No KTP"
+msgstr "Nomor KTP"
+
+#: app/mod_user/forms.py:52
+msgid "About me"
+msgstr "Tentang saya"
+
+#: app/mod_user/forms.py:53
+msgid "Owner bank name"
+msgstr "Nama pemilik rekening bank"
+
+#: app/mod_user/forms.py:54
+msgid "Owner bank number"
+msgstr "Nomor rekening bank"
+
+#: app/mod_user/forms.py:55
+msgid "Bank name"
+msgstr "Nama bank"
+
+#: app/mod_user/forms.py:56
+msgid "Bank branch"
+msgstr "Cabang bank"
+
+#: app/mod_user/forms.py:57
+msgid "No NPWP"
+msgstr "Nomor NPWP"
+
+#: app/mod_user/forms.py:74 app/mod_user/forms.py:115 app/mod_user/forms.py:156
+#: app/mod_user/forms.py:198 app/mod_user/forms.py:235
+msgid "{} has been register. Please use another username"
+msgstr "{} telah terdaftar. Gunakan username lain"
+
+#: app/mod_user/forms.py:86 app/mod_user/forms.py:127 app/mod_user/forms.py:168
+#: app/mod_user/forms.py:209 app/mod_user/forms.py:246
+msgid "{} has been register. Please use another email address"
+msgstr "{} telah terdaftar. Gunakan alamat email lain"
+
+#: app/mod_user/forms.py:95 app/mod_user/forms.py:136 app/mod_user/forms.py:177
+#: app/mod_user/forms.py:218
+msgid "Role *"
+msgstr "Hak akses *"
+
+#: app/mod_user/forms.py:99 app/mod_user/forms.py:140 app/mod_user/forms.py:181
+#: app/mod_user/forms.py:222
+msgid "Select role"
+msgstr "Pilih hak akses"
+
+#: app/mod_user/forms.py:255
+msgid "Old password *"
+msgstr "Kata sandi lama *"
+
+#: app/mod_user/forms.py:258
+msgid "New password *"
+msgstr "Kata sandi baru *"
+
+#: app/mod_user/forms.py:261
+msgid "Confirm new password *"
+msgstr "Ulangi kata sandi baru *"
+
+#: app/mod_user/forms.py:264
+msgid "Password do not match"
+msgstr "Kata sandi tidak sama"
+
+#: app/mod_user/forms.py:272
+msgid "Wrong Old Password!"
+msgstr "Kata sandi lama salah!"
+
+#: app/mod_user/routes.py:59
+msgid "User data"
+msgstr "Data pengguna"
+
+#: app/mod_user/routes.py:108
+msgid "User with username {} successfully created"
+msgstr "Pengguna dengan username {} berhasil dibuat"
+
+#: app/mod_user/routes.py:112
+msgid "Create user"
+msgstr "Tambah pengguna"
+
+#: app/mod_user/routes.py:129
+msgid "User Panel"
+msgstr "Panel pengguna"
+
+#: app/mod_user/routes.py:163 app/mod_user/routes.py:250
+msgid "Data {} {} successfully updated"
+msgstr "Data {} {} berhasil di ubah"
+
+#: app/mod_user/routes.py:189 app/mod_user/routes.py:276
+msgid "Edit User"
+msgstr "Ubah pengguna"
+
+#: app/mod_user/routes.py:207
+msgid "You do not have permission to view this resource."
+msgstr "Anda tidak memiliki izin untuk melihat halaman ini"
+
+#: app/mod_user/routes.py:293
+msgid "Data {} successfully deleted"
+msgstr "Data {} berhasil dihapus"
+
+#: app/mod_user/routes.py:308
+msgid "Password successfully updated"
+msgstr "Kata sandi berhasil di ubah"
+
+#: app/mod_user/routes.py:323
+msgid "Status User {} sucessfully updated"
+msgstr "Status Pengguna {} berhasil diperbaharui"
+
+#: app/mod_user/admin_templates/main/users/users.html:6
+msgid "Add User"
+msgstr "Tambahkan pengguna"
+
+#: app/mod_user/admin_templates/main/users/users.html:16
+msgid "First Name"
+msgstr "Nama Depan"
+
+#: app/mod_user/admin_templates/main/users/users.html:17
+msgid "Last Name"
+msgstr "Nama Belakang"
+
+#: app/mod_user/admin_templates/main/users/users.html:20
+msgid "Confirmation"
+msgstr "Konfirmasi"
+
+#: app/mod_user/admin_templates/main/users/users.html:21
+msgid "Action"
+msgstr "Aksi"
+
+#: app/mod_user/admin_templates/main/users/users.html:38
+msgid "Edit"
+msgstr "Ubah"
+
+#: app/mod_user/admin_templates/main/users/users.html:39
+#: app/mod_user/admin_templates/main/users/users.html:67
+msgid "Delete"
+msgstr "Hapus"
+
+#: app/mod_user/admin_templates/main/users/users.html:43
+msgid "Activate"
+msgstr "Aktifkan"
+
+#: app/mod_user/admin_templates/main/users/users.html:48
+msgid "Deactivate"
+msgstr "Non-Aktifkan"
+
+#: app/mod_user/admin_templates/main/users/users.html:56
+msgid "Delete confirmation"
+msgstr "Konfirmasi hapus data"
+
+#: app/mod_user/admin_templates/main/users/users.html:62
+msgid "Are you sure want to delete "
+msgstr "Apakah anda yakin ingin menghapus data"
+
+#: app/mod_user/admin_templates/main/users/users.html:65
+msgid "Cancel"
+msgstr "Batal"
+
+#~ msgid "[Flask Base] Reset Your Password"
+#~ msgstr ""
+
+#~ msgid "Wewenang"
+#~ msgstr ""
+
+#~ msgid "Pengguna"
+#~ msgstr ""
+
+#~ msgid "Profile Business"
+#~ msgstr ""
+
+#~ msgid "Pesan"
+#~ msgstr ""
+
+#~ msgid "Pengaturan"
+#~ msgstr ""
+
+#~ msgid "Keluar"
+#~ msgstr ""
+
+#~ msgid "Logo Perusahaan"
+#~ msgstr "Logo perusahaan"
+
+#~ msgid "Nama Jalan"
+#~ msgstr "Nama jalan"
+
+#~ msgid "Kecamatan *"
+#~ msgstr "Kecamatan"
+
+#~ msgid "Kabupaten *"
+#~ msgstr "Kabupaten *"
+
+#~ msgid "Provinsi *"
+#~ msgstr "Provinsi *"
+
+#~ msgid "Negara *"
+#~ msgstr "Negara *"
+
+#~ msgid "Kode Pos *"
+#~ msgstr "Kode pos *"
+
+#~ msgid "Nomor Telepon *"
+#~ msgstr "Nomor telepon *"
+
+#~ msgid "Data {} Berhasil Di Tambahkan."
+#~ msgstr "Data {} Berhasil Di Tambahkan."
+
+#~ msgid "Data {} Berhasil Di Perbaharui."
+#~ msgstr "Data {} Berhasil Di Perbaharui."
+
+#~ msgid "Profil Bisnis"
+#~ msgstr "Profil bisnis"
+
+#~ msgid "Data {} {} Berhasil Di Perbaharui."
+#~ msgstr "Data {} {} berhasil di perbaharui"
+
+#~ msgid "Data Pengguna"
+#~ msgstr "Data pengguna"
+
+#~ msgid "Data {} Berhasil Di Hapus."
+#~ msgstr "Data {} berhasil di hapus"
+
+#~ msgid "Data {} Gagal Di Hapus."
+#~ msgstr "Data {} gagal di hapus"
+
+#~ msgid "User dengan username {} berhasil ditambahkan."
+#~ msgstr "Pengguna dengan username {} berhasil ditambahkan"
+
+#~ msgid "Membuat Pengguna"
+#~ msgstr "Menambahkan pengguna"
+
+#~ msgid "Password anda sudah diperbaharui."
+#~ msgstr "Kata sandi anda sudah diperbaharui"
+
+#~ msgid "Kata Sandi"
+#~ msgstr "Kata sandi"
+
+#~ msgid "Ubah"
+#~ msgstr "Ubah"
+
+#~ msgid "Hapus"
+#~ msgstr "Hapus"
+
+#~ msgid "Nama Depan *"
+#~ msgstr "Nama depan *"
+
+#~ msgid "Nama Belakang *"
+#~ msgstr "Nama belakang *"
+
+#~ msgid "Jenis Kelamin"
+#~ msgstr "Jenis Kelamin"
+
+#~ msgid "Tanggal Lahir"
+#~ msgstr "Tanggak Lahir"
+
+#~ msgid "Nomor Telepon"
+#~ msgstr "Nomor Telepon"
+
+#~ msgid "Nomor KTP"
+#~ msgstr "Nomor KTP"
+
+#~ msgid "Alamat"
+#~ msgstr "Alamat"
+
+#~ msgid "Tentang Anda"
+#~ msgstr "Deskripsi diri"
+
+#~ msgid "Nama Pemilik Akun Bank"
+#~ msgstr "Nama Pemilik Akun Bank"
+
+#~ msgid "Nomor Rekening Bank"
+#~ msgstr "Nomor Rekeing Bank"
+
+#~ msgid "Nama Bank"
+#~ msgstr "Nama Bank"
+
+#~ msgid "Cabang Bank"
+#~ msgstr "Cabang Bank"
+
+#~ msgid "Nomor NPWP"
+#~ msgstr "Nomor NPWP"
+
+#~ msgid "Simpan"
+#~ msgstr "Simpan"
+
+#~ msgid "{} telah terdaftar. Gunakan username yang berbeda."
+#~ msgstr "{} telah terdaftar. Gunakan username yang berbeda"
+
+#~ msgid "{} telah terdaftar. Gunakan email yang berbeda."
+#~ msgstr "{} telah terdaftar. Gunakan email yang berbeda"
+
+#~ msgid "Pilih Hak Akses"
+#~ msgstr "Pilih hak akses"
+
+#~ msgid "Kata Sandi *"
+#~ msgstr "Kata sandi *"
+
+#~ msgid "Tambah"
+#~ msgstr "Tambah"
+
+#~ msgid "Kata Sandi Lama"
+#~ msgstr "Kata sandi lama"
+
+#~ msgid "Kata Sandi Baru"
+#~ msgstr "Kata sandi baru"
+
+#~ msgid "Konfirmasi Kata Sandi Baru"
+#~ msgstr "Konfirmasi kata sandi baru"
+
+#~ msgid "Kata sandi tidak cocok"
+#~ msgstr "Kata sandi tidak cocok"
+
+#~ msgid "Kata sandi tidak cocok."
+#~ msgstr "Kata sandi tidak cocok"
+
+#~ msgid "{} thas been register. Please use another username"
+#~ msgstr ""
+
+#~ msgid "{} telah terdaftar. Gunakan username yang berbeda"
+#~ msgstr ""
+
+#~ msgid "Verify Password"
+#~ msgstr "Konfirmasi Kata Sandi"
+
+#~ msgid "Repeat Password"
+#~ msgstr "Ulangi Kata Sandi"
+
+#~ msgid "Congratulation, you are now a registered user!"
+#~ msgstr "Selamat, anda sudah terdaftar!"
+
+#~ msgid "Your password has been reset"
+#~ msgstr "Kata sandi anda telah di atur ulang"
+
+#~ msgid "Photo"
+#~ msgstr "Foto"
+
+#~ msgid "Born date"
+#~ msgstr "Tanggal lahir"
+
+#~ msgid "If you have not requested a password reset simply ignore this message."
+#~ msgstr ""
+
+#~ msgid "Profile"
+#~ msgstr "Profil"
+
+#~ msgid ""
+#~ "Please confirm your account by clicking"
+#~ " link has been sent to you by"
+#~ " email.\n"
+#~ msgstr ""
+#~ "Konfirmasi terlebih dahulu akunmu dengan "
+#~ "klik tautan yang kami kirimkan melalui"
+#~ " email"
+
+#~ msgid "Application Logo *"
+#~ msgstr "Logo Aplikasi *"
+
+#~ msgid "Meta Title *"
+#~ msgstr "Meta Judul *"
+
+#~ msgid "Meta Description *"
+#~ msgstr "Meta Deskripsi *"
+
+#~ msgid "Meta Keyword *"
+#~ msgstr "Meta Kata Kunci *"
+
+#~ msgid "Homepage"
+#~ msgstr "Beranda"
+
+#~ msgid "App Preferences"
+#~ msgstr "Pengaturan Aplikasi"
+
+#~ msgid "Messages"
+#~ msgstr "Pesan"
+
+#~ msgid "Province"
+#~ msgstr "Provinsi"
+
+#~ msgid "Old password"
+#~ msgstr "Kata sandi lama"
+
+#~ msgid "New password"
+#~ msgstr "Kata sandi baru"
+
+#~ msgid "Confirm new password"
+#~ msgstr "Konfirmasi kata sandi baru"
+
+#~ msgid "Data {} failed to delete"
+#~ msgstr "Data {} gagal dihapus"
+
+#~ msgid "Dear"
+#~ msgstr "Yang terhormat"
+
+#~ msgid "To reset your password"
+#~ msgstr "Untuk mengatur ulang kata sandi anda"
+
+#~ msgid ""
+#~ "Alternatively, you can paste the "
+#~ "following link in your browser address"
+#~ " bar:"
+#~ msgstr ""
+#~ "Jika tidak, kamu dapat menempel tautan"
+#~ " berikut pada bilah alamat web "
+#~ "browser"
+
+#~ msgid "Sincerely,"
+#~ msgstr "Salam Hormat"
+
+#~ msgid "Data {} successfuly created"
+#~ msgstr "Data {} berhasil disimpan"
+
+#~ msgid "Data {} successfuly updated"
+#~ msgstr "Data {} berhasil diperbaharui"
+
+#~ msgid "says:"
+#~ msgstr "Berkata"
+
+#~ msgid "Master App Data"
+#~ msgstr "Data Master"
+
+#~ msgid "Roles"
+#~ msgstr "Hak Akses"
+
+#~ msgid "Users"
+#~ msgstr "Pengguna"
+
+#~ msgid "Theme Documentation"
+#~ msgstr "Dokumentasi tema"
+
+#~ msgid "Charts"
+#~ msgstr "Grafik Bagan"
+
+#~ msgid "Tables"
+#~ msgstr "Tabel"
+
+#~ msgid "Forms"
+#~ msgstr "Form"
+
+#~ msgid "Bootstrap Elements"
+#~ msgstr "Elemen Bootstrap"
+
+#~ msgid "Bootstrap Grid"
+#~ msgstr "Grid Bootstrap"
+
+#~ msgid "Blank Page"
+#~ msgstr "Halaman kosong"
+
+#~ msgid "Font Awesome"
+#~ msgstr ""
+
+#~ msgid "Profil"
+#~ msgstr ""
+
+#~ msgid "Settings"
+#~ msgstr "Pengaturan"
+
+#~ msgid "Logout"
+#~ msgstr "Keluar"
+
+#~ msgid "File Not Found"
+#~ msgstr "File tidak ditemukan"
+
+#~ msgid "Back"
+#~ msgstr "Kembali"
+
+#~ msgid "An unexpected error has occured"
+#~ msgstr "Terjadi kesalahan tak terduga"
+
+#~ msgid "The administrator has been notified. Sorry dor the incovenience!"
+#~ msgstr "Administrator telah diberitahu. Maaf untuk ketidaknyamanannya!"
+
+#~ msgid "User {} sucessfully updated"
+#~ msgstr "User {} berhasil diperbaharui"
+
