@@ -1,0 +1,196 @@
+{% extends 'back_office_components/base.html' %} {% import 'bootstrap/wtf.html' as wtf
+%} {% block styles %} {{ super() }} {% endblock %} {% block app_content %}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ title | title }}</h3>
+  </div>
+  <div class="panel-body">
+    <form method="POST" class="form" enctype="multipart/form-data" role="form">
+      {{ form.csrf_token() }}
+      <div class="form-group">
+        {{ form.name.label(class="control-label")}}
+        {{ form.name(class="form-control")}}
+        {% if form.name.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.name.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {% if business is none %}
+        {{ form.logo.label(class="control-label")}}
+        {{ form.logo()}}
+        {% if form.name.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.logo.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+        {% else %}
+        <div class="row">
+          <div class="col-md-2">
+            {% if data.business_profile_logo_name is not none %}
+            <img src="{{ url_for('.display_image_logo', filename=data.business_profile_logo_name) }}"
+              alt="{{ data.business_profile_name }}" width="100px" class="img-thumbnail">
+            {% else %}
+            <img src="{{ url_for('static', filename='img/100x100.svg') }}" width="100" alt="Placeholder Logo">
+            {% endif %}
+          </div>
+          <div class="col-md-10">
+            {{ form.logo.label(class="control-label")}}
+            {{ form.logo()}}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      <div class="form-group">
+        {{ form.address.label(class="control-label")}}
+        {{ form.address(class="form-control")}}
+        {% if form.address.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.address.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.sub_district.label(class="control-label")}}
+        {{ form.sub_district(class="form-control")}}
+        {% if form.sub_district.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.sub_district.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.district.label(class="control-label")}}
+        {{ form.district(class="form-control")}}
+        {% if form.district.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.district.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.province.label(class="control-label")}}
+        {{ form.province(class="form-control") }}
+        {% if form.province.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.province.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.country.label(class="control-label")}}
+        {{ form.country(class="form-control") }}
+        {% if form.country.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.country.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.postal_code.label(class="control-label")}}
+        {{ form.postal_code(class="form-control")}}
+        {% if form.postal_code.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.postal_code.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.phone_number.label(class="control-label")}}
+        {{ form.phone_number(class="form-control") }}
+        {% if form.phone_number.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.phone_number.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.email.label(class="control-label")}}
+        {{ form.email(class="form-control") }}
+        {% if form.email.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.email.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.website.label(class="control-label")}}
+        {{ form.website(class="form-control")}}
+        {% if form.website.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.website.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.instagram.label(class="control-label")}}
+        {{ form.instagram(class="form-control")}}
+        {% if form.instagram.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.instagram.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.youtube.label(class="control-label")}}
+        {{ form.youtube(class="form-control")}}
+        {% if form.youtube.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.youtube.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.twitter.label(class="control-label")}}
+        {{ form.twitter(class="form-control")}}
+        {% if form.twitter.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.twitter.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      <div class="form-group">
+        {{ form.facebook.label(class="control-label")}}
+        {{ form.facebook(class="form-control")}}
+        {% if form.facebook.errors %}
+        <small class="form-text text-danger">
+          {% for error in form.facebook.errors %}
+          {{ error }}
+          {% endfor %}
+        </small>
+        {% endif%}
+      </div>
+      {{ form.submit(class='btn btn-default')}}
+    </form>
+  </div>
+</div>
+{% endblock %} {% block scripts %} {{ super() }} {% endblock %}
