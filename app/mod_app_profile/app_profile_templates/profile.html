@@ -1,0 +1,20 @@
+{% extends 'back_office_components/base.html' %} {% import 'bootstrap/wtf.html' as wtf
+%} {% block styles %} {{ super() }} {% endblock %} {% block app_content %}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ title | title }}</h3>
+  </div>
+  <div class="panel-body">
+          <div class="">
+            {% if data.application_profile_logo_name is not none %}
+            <img src="{{ url_for('.display_image_logo', filename=data.application_profile_logo_name) }}"
+              alt="{{ data.application_profile_name }}" width="100px" class="img-thumbnail">
+            {% else %}
+            <img src="{{ url_for('static', filename='img/100x100.svg') }}" width="100" alt="Placeholder Logo">
+            {% endif %}
+          </div>
+    <hr/> 
+      {{ wtf.quick_form(form) }}
+  </div>
+</div>
+{% endblock %} 
