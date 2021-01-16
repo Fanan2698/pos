@@ -1,0 +1,4 @@
+{{ _('Dear') }} {{ user.username }},
+{{ _('To confirm your account click on the following link:') }}
+{{ url_for('.confirm', token=token, _external=True) }}
+{{ _('Application Team') }}

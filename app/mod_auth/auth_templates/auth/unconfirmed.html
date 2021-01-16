@@ -1,0 +1,11 @@
+{% extends 'auth_components/base.html' %}
+{% block app_content %}
+<div class="row">
+    <div class="col-md-12">
+        {{ _('Hello,') }} {{ current_user.username }} !
+        {{ _('Please confirm your account by clicking link has been sent to you by email.') }}
+        {{ _('Send another confirmation account?') }} <a href="{{ url_for('mod_auth.resend_confirmation') }}">{{ _('Click Here') }}</a>
+    </div>
+</div>
+<br />
+{% endblock %}

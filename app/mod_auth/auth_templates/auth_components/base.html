@@ -1,0 +1,51 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+{% if title %}
+{{ _(title) }} - {% if config['APP_NAME'] %}{{ config['APP_NAME'] }}{% else %}Flask Base{% endif %}
+{% else %}
+{{ _('Welcome to') }} Flask Base{% endif %}
+{% endblock %}
+
+<!-- start block style -->
+{% block styles %}
+{{super()}}
+<link rel="apple-touch-icon" sizes="180x180"
+  href="{{ url_for('static', filename='img/favicon/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32"
+  href="{{ url_for('static', filename='img/favicon/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16"
+  href="{{ url_for('static', filename='img/favicon/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ url_for('static', filename='img/favicon/site.webmanifest') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/custome.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='fonts/font-awesome/css/font-awesome.min.css') }}">
+<style>
+  body {
+    margin-top: 75px;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="form-signin">
+    <div class="well">
+      {% include 'auth_components/_alert.html' %}
+      <h3 class="text-center">{{ title | title }}</h3>
+      {# application content needs to be provided in the app_content block #}
+      {% block app_content %}{% endblock %}
+    </div>
+    <footer class="text-center">
+      <p class="text-muted">{% if config['APP_NAME'] %}{{ config['APP_NAME'] }}{% else %}Flask Base{% endif %} © 2020 -
+        v0.1
+        ({% if config['ENV'] == 'development'%}development{% elif config['ENV'] == 'production'%}production{%else%}not
+        configure{%endif%})</p>
+    </footer>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
+{% endblock %}
